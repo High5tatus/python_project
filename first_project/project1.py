@@ -30,11 +30,12 @@ else:  #성공했다면,
         print(f"[{count}th] image_url =", image_info['image_url'])
         #저장될 이미지 파일명 설정
         count = count+1
-        file_name = "test_%d.jpg" %(count)
+        #파일 네임에 경로 설정 그럼 아래 경로에 파일이 생성된다. first_project/image
+        file_name = "first_project/image/test_%d.jpg" %(count)
         #이미지 저장
         save_image(image_info['image_url'], file_name)
 
         #이미지 저장 갯수
-        if count == 20 :
+        if count == 1 :
             break
 
